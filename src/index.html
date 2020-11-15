@@ -14,12 +14,20 @@
     <img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
     <span class="slogan">приходите к нам учиться</span>
     <!-- Верхняя часть страницы -->
+    
+  
+    <!-- <span class="slogan"><a href="<?php require_once ("info.php")?>">зайти до ф-ции phpinfo</a></span> -->
   </div>
 
   <div id="content">
     <!-- Заголовок -->
     <h1>Добро пожаловать на наш сайт!</h1>
     <!-- Заголовок -->
+    <blockquote>
+      <?php 
+      echo strftime('Сегодня %d-%m-%Y');
+      ?>
+      </blockquote>
     <!-- Область основного контента -->
     <h3>Зачем мы ходим в школу?</h3>
     <p>
