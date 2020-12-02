@@ -79,19 +79,21 @@ if ($hour > 0 && $hour < 6){
     <!-- Навигация -->
     <h2>Навигация по сайту</h2>
     <!-- Меню -->
+    <?php 
+    $leftMenu = array(
+        array('link'=>'Домой', 'href'=>'index.html'),
+        array('link'=>'О нас', 'href'=>'about.html'),
+        array('link'=>'Контакты', 'href'=>'contact.html'),
+        array('link'=>'Таблица умножения', 'href'=>'table.html'),
+        array('link'=>'Калькулятор', 'href'=>'calc.html')
+    );
+    ?>
     <ul>
-      <li><a href='index.html'>Домой</a>
-      </li>
-      <li><a href='about.html'>О нас</a>  
-      </li>
-      <li><a href='contact.html'>Контакты</a>
-      </li>
-      <li><a href='table.html'>Таблица умножения</a>
-      </li>
-      <li><a href='calc.html'>Калькулятор</a>
-      </li>
-      <li><a href='info.php'>Инфор php</a>
-      </li>
+      <li><a href='<?= $leftMenu[0]['href']?>'><?= $leftMenu[0]['link']?></a></li>
+      <li><a href='<?= $leftMenu[1]['href']?>'><?= $leftMenu[1]['link']?></a></li>
+      <li><a href='<?= $leftMenu[2]['href']?>'><?= $leftMenu[2]['link']?></a></li>
+      <li><a href='<?= $leftMenu[3]['href']?>'><?= $leftMenu[3]['link']?></a></li>
+      <li><a href='<?= $leftMenu[4]['href']?>'><?= $leftMenu[4]['link']?></a></li>
     </ul>
     <!-- Меню -->
     <!-- Навигация -->
