@@ -17,4 +17,15 @@ echo "$len1 $len2";
 // echo $go;
 */
 
-require_once ("index.html");
+// $x=2;
+// $x++;
+
+// $a=2;
+// ++$a;
+
+// echo $x++."<br>";
+// echo $a;
+
+
+//require_once ("index.html");
+require_once ("demo/for.php");
