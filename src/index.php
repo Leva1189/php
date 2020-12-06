@@ -27,6 +27,28 @@ echo "$len1 $len2";
 // echo $a;
 
 
-//require_once ("index.html");
+require_once ("index.html");
 //require_once ("demo/for.php");
-require_once ("demo/while.php");
+//require_once ("demo/while.php");
+
+/*
+//прорисовуем таблицу
+$cols = 10;
+$rows = 10;
+$color = "blue";
+
+echo "<table border='1'>";
+  for($tr=1; $tr<=$rows; $tr++){
+    echo "<tr>";
+      for($td=1; $td<=$cols; $td++){
+        if($tr == 1 || $td == 1){
+          echo "<th style='background:$color'>" . $tr*$td . "</th>";
+        }else{
+          echo "<td>" . $tr*$td . "</td>";
+        }
+      }
+    echo "</tr>";  
+  }
+echo "</table>";   
+
+*/
