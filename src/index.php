@@ -28,4 +28,5 @@ echo "$len1 $len2";
 
 
 //require_once ("index.html");
-require_once ("demo/for.php");
+//require_once ("demo/for.php");
+require_once ("demo/while.php");
