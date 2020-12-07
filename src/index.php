@@ -26,7 +26,28 @@ echo "$len1 $len2";
 // echo $x++."<br>";
 // echo $a;
 //function_Table start
+/*
+$cnt = 0;
 function drawTable($cols = 10, $rows = 10, $color = "yellow"){
+  /** 
+   * 3 Способа написание глобал переменны
+   * 1. global $cnt;
+        $cnt++;
+   * 2. $GLOBALS['cnt']++;
+   * 3. Если в параметрах функций идет ссыка: 
+   *    function say(&$name){
+   *    echo "Hello, $name!";
+   *    $name = "Vasya";
+   *    }
+   *    $name = "Mike"; // Hello? Mike
+   *    say($name);
+   *    echo $name; // Vasya
+  
+  // global $cnt;
+  // $cnt++;
+
+  
+  $GLOBALS['cnt']++;
   echo "<table border='1'>";
   for($tr=1; $tr<=$rows; $tr++){
     echo "<tr>";
@@ -42,13 +63,13 @@ function drawTable($cols = 10, $rows = 10, $color = "yellow"){
 echo "</table>";   
 }
 
-drawTable();
     drawTable(5);
     drawTable(5,5);
     drawTable(5,5,"red");
+    echo "</br>"."Таблица отрисована $cnt раза";
 //function_Table finish
-
-//require_once ("index.html");
+*/
+require_once ("index.html");
 //require_once ("demo/for.php");
 //require_once ("demo/while.php");
 
