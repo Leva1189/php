@@ -25,19 +25,9 @@ echo "$len1 $len2";
 
 // echo $x++."<br>";
 // echo $a;
-
-
-require_once ("index.html");
-//require_once ("demo/for.php");
-//require_once ("demo/while.php");
-
-/*
-//прорисовуем таблицу
-$cols = 10;
-$rows = 10;
-$color = "blue";
-
-echo "<table border='1'>";
+//function_Table start
+function drawTable($cols = 10, $rows = 10, $color = "yellow"){
+  echo "<table border='1'>";
   for($tr=1; $tr<=$rows; $tr++){
     echo "<tr>";
       for($td=1; $td<=$cols; $td++){
@@ -50,5 +40,23 @@ echo "<table border='1'>";
     echo "</tr>";  
   }
 echo "</table>";   
+}
 
-*/
+drawTable();
+    drawTable(5);
+    drawTable(5,5);
+    drawTable(5,5,"red");
+//function_Table finish
+
+//require_once ("index.html");
+//require_once ("demo/for.php");
+//require_once ("demo/while.php");
+
+
+
+
+
+
+
+
+
