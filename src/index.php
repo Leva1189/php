@@ -69,6 +69,9 @@ echo "</table>";
     echo "</br>"."Таблица отрисована $cnt раза";
 //function_Table finish
 */
+
+//print_r(getdate());
+//echo 2 + print 1;
 require_once ("index.html");
 //require_once ("demo/for.php");
 //require_once ("demo/while.php");

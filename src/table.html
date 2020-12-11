@@ -1,6 +1,5 @@
 <?php
-$cols = 10;
-$rows = 10;
+require_once "inc/lib.inc.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,9 +43,6 @@ $rows = 10;
     </form>
     <!-- Таблица -->
     <?php
-    drawTable();
-    drawTable(5);
-    drawTable(5,5);
     drawTable(5,5,"red");
     ?>
    
