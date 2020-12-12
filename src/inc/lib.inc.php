@@ -19,6 +19,8 @@ echo "</table>";
 
 //Меню
 function drawMenu($menu, $vertical = true){
+  if(!is_array($menu))
+    return false;
     $style = "";
     if(!$vertical){
       $style = " style='display:inline; margin-right:15px'";
@@ -31,7 +33,10 @@ function drawMenu($menu, $vertical = true){
       echo "</li$style>";
     }
   echo "</ul>"; 
+
+  return true;
   }
+
 
 //Меню - finish
 
