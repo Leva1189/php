@@ -1,86 +1,63 @@
-<?php
-/*
-    echo "Hello". " ". "world". " ". "!". "\n";
-    echo strftime('%d-%B-%Y, %A '). "\n";
-    print strftime('%d-%B-%Y, %A '). " ". "Yes";
-    require_once ("info.php");
+<?
 
+	include 'inc/headers.inc.php';
+	require_once 'inc/сookie.inc.php';
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><?= $title?></title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="inc/style.css" />
+	</head>
+	<body>
 
-$name = "John  Вася";
+		<div id="header">
+			<!-- Верхняя часть страницы -->
+			<img src="logo.gif" width="187" height="29" alt="Наш логотип" class="logo" />
+			<span class="slogan">обо всём сразу</span>
+			<!-- Верхняя часть страницы -->
+		</div>
 
-$len1 = strlen($name); // 5 (подсчет в байтах)
-$len2 = mb_strlen($name); // подсчет по символу
-//$pos = $len - 1;
-echo "$len1 $len2";
-//echo $name{$pos};
-// $go = $len{ strlen($name)-1};
-// echo $go;
-*/
-
-// $x=2;
-// $x++;
-
-// $a=2;
-// ++$a;
-
-// echo $x++."<br>";
-// echo $a;
-//function_Table start
-/*
-$cnt = 0;
-function drawTable($cols = 10, $rows = 10, $color = "yellow"){
-  /** 
-   * 3 Способа написание глобал переменны
-   * 1. global $cnt;
-        $cnt++;
-   * 2. $GLOBALS['cnt']++;
-   * 3. Если в параметрах функций идет ссыка: 
-   *    function say(&$name){
-   *    echo "Hello, $name!";
-   *    $name = "Vasya";
-   *    }
-   *    $name = "Mike"; // Hello? Mike
-   *    say($name);
-   *    echo $name; // Vasya
-  
-  // global $cnt;
-  // $cnt++;
-
-  
-  $GLOBALS['cnt']++;
-  echo "<table border='1'>";
-  for($tr=1; $tr<=$rows; $tr++){
-    echo "<tr>";
-      for($td=1; $td<=$cols; $td++){
-        if($tr == 1 || $td == 1){
-          echo "<th style='background:$color'>" . $tr*$td . "</th>";
-        }else{
-          echo "<td>" . $tr*$td . "</td>";
-        }
-      }
-    echo "</tr>";  
-  }
-echo "</table>";   
-}
-
-    drawTable(5);
-    drawTable(5,5);
-    drawTable(5,5,"red");
-    echo "</br>"."Таблица отрисована $cnt раза";
-//function_Table finish
-*/
-
-//print_r(getdate());
-//echo 2 + print 1;
-require_once ("index.html");
-//require_once ("demo/for.php");
-//require_once ("demo/while.php");
-
-
-
-
-
-
-
-
-
+		<div id="content">
+			<!-- Заголовок -->
+			<h1><?= $header?></h1>
+			<blockquote>
+			<?php
+			
+				if ($visitCounter == 1){
+					echo "Спасибо, что зашли на огонек";
+				}else{
+					echo "Вы зашли к нам $visitCounter раз
+					 <br> Последнее посещение: $lastVisit";
+				}
+			?>
+			</blockquote>
+			<!-- Заголовок -->
+			<!-- Область основного контента -->
+			<?php
+				include 'inc/routing.inc.php';
+			?>	
+			<!-- Область основного контента -->
+		</div>
+		<div id="nav">
+			<!-- Навигация -->
+			<h2>Навигация по сайту</h2>
+			<ul>
+				<li><a href='index.php'>Домой</a></li>
+				<li><a href='index.php?id=contact'>Контакты</a></li>
+				<li><a href='index.php?id=about'>О нас</a></li>
+				<li><a href='index.php?id=info'>Информация</a></li>
+				<li><a href='test/index.php'>Он-лайн тест</a></li>
+				<li><a href='index.php?id=gbook'>Гостевая книга</a></li>
+				<li><a href='eshop/catalog.php'>Магазин</a></li>
+			</ul>
+			<!-- Навигация -->
+		</div>
+		<div id="footer">
+			<!-- Нижняя часть страницы -->
+			&copy; Супер-мега сайт, 2000 &ndash; <?= date('Y')?>
+			<!-- Нижняя часть страницы -->
+		</div>
+	</body>
+</html>
