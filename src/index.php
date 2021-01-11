@@ -48,7 +48,7 @@
 				<li><a href='index.php?id=contact'>Контакты</a></li>
 				<li><a href='index.php?id=about'>О нас</a></li>
 				<li><a href='index.php?id=info'>Информация</a></li>
-				<li><a href='test/index.html'>Он-лайн тест</a></li>
+				<li><a href='test/index.php'>Он-лайн тест</a></li>
 				<li><a href='index.php?id=gbook'>Гостевая книга</a></li>
 				<li><a href='eshop/catalog.php'>Магазин</a></li>
 			</ul>

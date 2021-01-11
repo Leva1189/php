@@ -46,19 +46,19 @@ $title = $_POST['title'];
 // подключаем соответствующий файл с вопросами
 	switch($q){
 	case 0:
-		include 'start.html';
+		include 'start.php';
 		break;
 	case 1:
-		include 'q1.html';
+		include 'q1.php';
 		break;
 	case 2:
-		include 'q2.html';
+		include 'q2.php';
 		break;
 	case 3:
-		include 'q3.html';
+		include 'q3.php';
 		break;
 	default:
-		include 'result.html';
+		include 'result.php';
 	}
 ?>
 		<!-- Область основного контента -->
