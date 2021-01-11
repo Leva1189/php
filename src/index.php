@@ -1,6 +1,6 @@
 <?
 
-	//include 'inc/headers.inc.php';
+	require_once  'inc/headers.inc.php';
 	//require_once 'inc/сookie.inc.php';
 ?>
 <!DOCTYPE html>

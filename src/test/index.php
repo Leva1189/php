@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(!isset($_SESSION['test']) and !isset($_POST['q'])){
 // Если первый запуск теста, то инициализируем переменные
