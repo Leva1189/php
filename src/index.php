@@ -1,7 +1,7 @@
 <?
 
-	include 'inc/headers.inc.php';
-	require_once 'inc/сookie.inc.php';
+	//include 'inc/headers.inc.php';
+	//require_once 'inc/сookie.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
