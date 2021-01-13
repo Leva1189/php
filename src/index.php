@@ -2,6 +2,8 @@
 
 	require_once  'inc/headers.inc.php';
 	//require_once 'inc/сookie.inc.php';
+	define('PATH_LOG', 'path.log');
+	include 'inc/log.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,6 +53,7 @@
 				<li><a href='test/index.php'>Он-лайн тест</a></li>
 				<li><a href='index.php?id=gbook'>Гостевая книга</a></li>
 				<li><a href='eshop/catalog.php'>Магазин</a></li>
+				<li><a href='index.php?id=log'>Журнал посещений</a></li>
 			</ul>
 			<!-- Навигация -->
 		</div>
