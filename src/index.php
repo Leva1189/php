@@ -3,7 +3,7 @@
 	require_once  'inc/headers.inc.php';
 	//require_once 'inc/сookie.inc.php';
 	define('PATH_LOG', 'path.log');
-	include 'inc/log.inc.php';
+	//include 'inc/log.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
