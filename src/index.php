@@ -11,8 +11,8 @@ class User{
         $this->password=$password;
 
     }
-    function __destructor(){
-        echo "Полователь - удален <br>";
+    function __destruct(){
+        echo "Пользователь ->".$this->login." - удален <br>";
     }
 
     function showInfo(){
