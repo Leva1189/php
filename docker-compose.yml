@@ -13,7 +13,7 @@ services:
     restart: always
 
   php:
-    image: php:7.4-fpm
+    image: php:8-fpm
     container_name: 'php'
     volumes:
       - ./src:/var/www/adm
@@ -21,14 +21,14 @@ services:
       - "9000:9000"
     restart: always
 
-  db:
-    image: mysql:latest
-    container_name: 'mysql'
-    ports:
-     - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: 'root'
-    restart: always
+#  db:
+#    image: mysql:latest
+#    container_name: 'mysql'
+#    ports:
+#     - "3306:3306"
+#    environment:
+#      MYSQL_ROOT_PASSWORD: 'root'
+#    restart: always
   
 
 
