@@ -35,7 +35,11 @@
     <input type="submit" value="Добавить!" />
 </form>
 <?php
-
+require "get_news.inc.php";
+$posts = $news->getNews();
+echo "<pre>";
+print_r($posts);
+echo "</pre>";
 ?>
 </body>
 </html>
